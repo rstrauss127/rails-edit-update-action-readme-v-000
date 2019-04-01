@@ -27,6 +27,5 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.update(title: params[:title], description: params[:description])
     redirect_to article_path(@article)
-    puts params.inspect
   end
 end
